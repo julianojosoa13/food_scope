@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:food_scope/Widgets/AppBarWidget.dart';
+import 'package:food_scope/Widgets/CategoriesWidget.dart';
+import 'package:food_scope/Widgets/PopularItemsWidget.dart';
 
 class HomePage extends StatelessWidget
 {
@@ -13,7 +15,7 @@ class HomePage extends StatelessWidget
           // Custom App Bar Widget
           AppBarWidget(),
 
-          // Search
+          // Recherche
           Padding(
             padding: EdgeInsets.symmetric(
               horizontal: 15,
@@ -43,7 +45,7 @@ class HomePage extends StatelessWidget
                     Icon(Icons.search, color: Colors.red),
                     Container(
                       height: 50,
-                      width: 300,
+                      width: 290,
                       child: Padding(
                         padding: EdgeInsets.symmetric(
                           horizontal: 15,
@@ -55,12 +57,45 @@ class HomePage extends StatelessWidget
                           ),
                         ),
                       )
-                    )
+                    ),
+                    Icon(Icons.filter_list)
                   ],
                 )
               )
             )
-          )
+          ),
+
+          // Categories
+          Padding(
+            padding: EdgeInsets.only(top:20,left:10),
+            child: Text(
+              "Categories",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                color: Colors.grey,
+              )
+            )
+          ),
+
+          // Category widget
+          CategoriesWidget(),
+
+          //Ppopular Items
+          Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child: Text(
+              "Populaires",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                color: Colors.grey,
+              )
+            )
+          ),
+
+          // Popular Items widget
+          PopularItemsWidget(),
         ],
       )
     );

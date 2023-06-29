@@ -31,6 +31,21 @@ class AppBarWidget extends StatelessWidget
               child: Icon(Icons.menu),
             )
           ),
+          Text(
+              'FoodScope', style: TextStyle(
+              fontSize: 24,
+              fontFamily: 'Montserrat',
+              fontWeight: FontWeight.w300,
+              color: Colors.orange,
+              shadows: [
+                Shadow(
+                  color: Colors.brown,
+                  blurRadius: 5,
+                  offset: Offset(0,3)
+                )
+              ]
+            ),
+          ),
           InkWell(
             onTap:() {},
             child: Container(
