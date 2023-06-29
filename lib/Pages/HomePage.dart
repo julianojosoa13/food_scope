@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:food_scope/Widgets/AppBarWidget.dart';
 import 'package:food_scope/Widgets/CategoriesWidget.dart';
 import 'package:food_scope/Widgets/PopularItemsWidget.dart';
+import 'package:food_scope/Widgets/NewestItemWidget.dart';
+
 
 class HomePage extends StatelessWidget
 {
@@ -41,11 +43,12 @@ class HomePage extends StatelessWidget
                   horizontal: 10,
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(Icons.search, color: Colors.red),
                     Container(
                       height: 50,
-                      width: 290,
+                      width: double.infinity,
                       child: Padding(
                         padding: EdgeInsets.symmetric(
                           horizontal: 15,
@@ -73,7 +76,7 @@ class HomePage extends StatelessWidget
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
-                color: Colors.grey,
+                // color: Colors.grey,
               )
             )
           ),
@@ -89,13 +92,29 @@ class HomePage extends StatelessWidget
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
-                color: Colors.grey,
+                // color: Colors.grey,
               )
             )
           ),
 
           // Popular Items widget
           PopularItemsWidget(),
+
+          // Nouveautés
+          Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child: Text(
+              "Nouveautés",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                // color: Colors.grey,
+              )
+            )
+          ),
+
+          // Newest  item
+          NewestItemWidget()
         ],
       )
     );

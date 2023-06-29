@@ -37,12 +37,12 @@ class PopularItemsWidget extends StatelessWidget {
                       Container(
                         alignment: Alignment.center,
                         child: Image.asset(
-                          "assets/pizza.png",
+                          "assets/burger.png",
                           height: 130,
                         ),
                       ),
                       Text(
-                        "Pizza Royal",
+                        "Hot Burger",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -50,7 +50,7 @@ class PopularItemsWidget extends StatelessWidget {
                       ),
                       SizedBox(height: 4,),
                       Text(
-                        "Savourez nos Pizza Royales",
+                        "Savourez nos Hot Burger",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class PopularItemsWidget extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "12 000 Ar", style: TextStyle(
+                            "24 000 Ar", style: TextStyle(
                               fontSize: 19,
                               color: Colors.red,
                               fontWeight: FontWeight.bold,
@@ -79,7 +79,7 @@ class PopularItemsWidget extends StatelessWidget {
                 )
               )
             ),
-
+            
             // Single Item
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 7),
@@ -106,12 +106,12 @@ class PopularItemsWidget extends StatelessWidget {
                       Container(
                         alignment: Alignment.center,
                         child: Image.asset(
-                          "assets/burger.png",
+                          "assets/pizza.png",
                           height: 130,
                         ),
                       ),
                       Text(
-                        "Hot Burger",
+                        "Pizza Royale",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -119,7 +119,7 @@ class PopularItemsWidget extends StatelessWidget {
                       ),
                       SizedBox(height: 4,),
                       Text(
-                        "Savourez nos Hot Burger",
+                        "Savourez nos Pizza Royales",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -130,7 +130,7 @@ class PopularItemsWidget extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "24 000 Ar", style: TextStyle(
+                            "12 000 Ar", style: TextStyle(
                               fontSize: 19,
                               color: Colors.red,
                               fontWeight: FontWeight.bold,
