@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class NewestItemWidget extends StatelessWidget {
 
@@ -12,7 +13,7 @@ class NewestItemWidget extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(vertical: 10),
               child: Container(
-                height: 150,
+                height: 250,
                 width: 380,
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -40,7 +41,7 @@ class NewestItemWidget extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width:190,
+                      width:220,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -53,12 +54,27 @@ class NewestItemWidget extends StatelessWidget {
                             )
                           ),
                           Text(
-                            "Goûtez à nos délicieuses Pizza Royales! Une saveur introuvable ailleurs!",
+                            "Goûtez à nos délicieuses Pizza Royales! Une saveur unique, introuvable ailleurs!",
                             style: TextStyle(
-                              fontSize: 17,
+                              fontSize: 16,
                               // fontWeight: FontWeight.bold,
                             )
-                          )
+                          ),
+                          RatingBar.builder(
+                            initialRating: 4,
+                            minRating: 1,
+                            direction: Axis.horizontal,
+                            itemCount: 5,
+                            itemSize: 18,
+                            itemPadding: EdgeInsets.symmetric(horizontal: 4),
+                            itemBuilder: (context, _) => Icon(Icons.star, color: Colors.red),
+                            onRatingUpdate:(index) {},
+                          ),
+                          Text("12 000 Ar", style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.red,
+                          ))
                         ],
                       )
                     )

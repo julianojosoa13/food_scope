@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget
               vertical: 10, 
             ),
             child: Container(
-              width: double.infinity,
+              width: 300,
               height: 50,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget
                     Icon(Icons.search, color: Colors.red),
                     Container(
                       height: 50,
-                      width: double.infinity,
+                      width: 270,
                       child: Padding(
                         padding: EdgeInsets.symmetric(
                           horizontal: 15,
