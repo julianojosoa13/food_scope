@@ -11,7 +11,31 @@ class HomePage extends StatelessWidget
       body: ListView(
         children: [
           // Custom App Bar Widget
-          AppBarWidget()
+          AppBarWidget(),
+
+          // Search
+          Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: 15,
+              vertical: 10, 
+            ),
+            child: Container(
+              width: double.infinity,
+              height: 50,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 2,
+                    blurRadius: 10,
+                    offset: Offset(0,3),
+                  ),
+                ]
+              ),
+            )
+          )
         ],
       )
     );
