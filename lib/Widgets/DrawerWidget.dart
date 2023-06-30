@@ -66,6 +66,14 @@ class DrawerWidget extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               )
             )
+          ),
+          ListTile(
+            leading: Icon(Icons.exit_to_app,color: Colors.red,),
+            title: Text("Quitter", style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              )
+            )
           )
         ],
       ),
