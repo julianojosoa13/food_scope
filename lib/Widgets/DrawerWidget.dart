@@ -33,7 +33,10 @@ class DrawerWidget extends StatelessWidget {
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               )
-            )
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, "/");
+            },
           ),
           ListTile(
             leading: Icon(Icons.list_alt_rounded,color: Colors.red,),
@@ -52,15 +55,18 @@ class DrawerWidget extends StatelessWidget {
             )
           ),
           ListTile(
-            leading: Icon(CupertinoIcons.cart_fill,color: Colors.red,),
+            leading: Icon(CupertinoIcons.cart,color: Colors.red,),
             title: Text("Mes commandes", style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               )
-            )
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, "cartPage");
+            },
           ),
           ListTile(
-            leading: Icon(CupertinoIcons.heart_solid,color: Colors.red,),
+            leading: Icon(CupertinoIcons.heart,color: Colors.red,),
             title: Text("Mes favoris", style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -73,7 +79,10 @@ class DrawerWidget extends StatelessWidget {
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               )
-            )
+            ),
+            onTap: () {
+              
+            },
           )
         ],
       ),
