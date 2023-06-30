@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:food_scope/Widgets/AppBarWidget.dart';
 import 'package:food_scope/Widgets/CategoriesWidget.dart';
+import 'package:food_scope/Widgets/DrawerWidget.dart';
 import 'package:food_scope/Widgets/PopularItemsWidget.dart';
 import 'package:food_scope/Widgets/NewestItemWidget.dart';
 
@@ -55,7 +57,7 @@ class HomePage extends StatelessWidget
                         ),
                         child: TextFormField(
                           decoration: InputDecoration(
-                            hintText: "Que désirez-vous?",
+                            hintText: "Que désirez-vous manger?",
                             border: InputBorder.none,
                           ),
                         ),
@@ -114,9 +116,35 @@ class HomePage extends StatelessWidget
           ),
 
           // Newest  item
-          NewestItemWidget()
+          NewestItemWidget(),
+
         ],
-      )
+      ),
+
+      drawer: DrawerWidget(),
+      
+      floatingActionButton: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(80),
+              boxShadow: [
+                BoxShadow(
+                  spreadRadius: 2,
+                  blurRadius: 10,
+                  color: Colors.grey.withOpacity(0.5),
+                  offset: Offset(0,3)
+                )
+              ]
+            ),
+            child: FloatingActionButton(
+              backgroundColor: Colors.white,
+              onPressed: () {},
+              child: Icon(
+                CupertinoIcons.cart,
+                color: Colors.red,
+                size: 30,
+              )
+            ),
+          )
     );
   }
 }
