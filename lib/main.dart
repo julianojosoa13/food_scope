@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_scope/Pages/CartPage.dart';
 import 'package:food_scope/Pages/HomePage.dart';
 
 void main()
@@ -21,6 +22,7 @@ class FoodScope extends StatelessWidget
       ),
       routes: {
         "/" : (context) => HomePage(),
+        "cartPage": (context) => CartPage(),
       }
     );
   }
